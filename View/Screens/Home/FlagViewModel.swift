@@ -8,20 +8,11 @@
 import Foundation
 import SwiftUI
 
-struct FlagViewModel{
-    var opt = 0
-    var togg = false
-    let layout = [
-        GridItem(.adaptive(minimum: 150))
-    ]
-}
-
-class FlagsButtons: ObservableObject {
-    @Published var africa = "África do Sul"
-    @Published var america = "Estados Unidos"
-    @Published var asia = "China"
-    @Published var europa = "Reino Unido"
-    @Published var oceania = "Austrália"
-    
-    
+struct FlagViewModel {
+    let layoutGrid = [GridItem(.adaptive(minimum: 150))]
+    var africa = InitFlagsSettings(country: "África do Sul")
+    var america = InitFlagsSettings(country: "Estados Unidos")
+    var asia = InitFlagsSettings(country: "China")
+    var europa = InitFlagsSettings(country: "Reino Unido")
+    var oceania = InitFlagsSettings(country: "Austrália")
 }

@@ -6,46 +6,49 @@
 //
 
 import Foundation
+import SwiftUI
 
 class EuropaViewModel: ObservableObject {
-    @Published var selectFlag = Int.random(in: 0...2)
-    @Published var restart = false
+    
+    let layoutGrid = [GridItem(.adaptive(minimum: 150))]
+    @Published var select = Int.random(in: 0...5)
+    @Published var isRestart = false
     @Published var score = ""
-    @Published var totScore = 0
+    @Published var totalScore = 0
     @Published var games = 0
-    @Published var txtRed = false
+    @Published var isRed = false
     @Published var flag3D = 0.0
-    @Published var paises = ["Albânia", "Alemanha", "Andorra", "Armênia", "Áustria", "Azerbaidjão", "Belarus", "Bélgica", "Bósnia", "Bulgária", "Chipre", "Croácia", "Dinamarca", "Escócia", "Eslováquia", "Eslovênia", "Espanha", "Estônia", "Finlândia", "França", "Geórgia", "Grécia", "Holanda", "Hungria", "Inglaterra", "Irlanda do Norte", "Irlanda", "Islândia", "Itália", "Kosovo", "Letônia", "Liechtenstein", "Lituânia", "Luxemburgo", "Macedônia do Norte", "Malta", "Moldova", "Mônaco", "Montenegro", "Noruega", "País de Gales", "Polônia", "Portugal", "Povo Cigano Romani", "Reino Unido", "Romênia", "Rússia", "San Marino", "Sérvia", "Suécia", "Suica", "Tchéquia", "Turquia", "Ucrânia", "Vaticano"].shuffled()
+    @Published var countrys = ["Albânia", "Alemanha", "Andorra", "Armênia", "Áustria", "Azerbaidjão", "Belarus", "Bélgica", "Bósnia", "Bulgária", "Chipre", "Croácia", "Dinamarca", "Escócia", "Eslováquia", "Eslovênia", "Espanha", "Estônia", "Finlândia", "França", "Geórgia", "Grécia", "Holanda", "Hungria", "Inglaterra", "Irlanda do Norte", "Irlanda", "Islândia", "Itália", "Kosovo", "Letônia", "Liechtenstein", "Lituânia", "Luxemburgo", "Macedônia do Norte", "Malta", "Moldova", "Mônaco", "Montenegro", "Noruega", "País de Gales", "Polônia", "Portugal", "Povo Cigano Romani", "Reino Unido", "Romênia", "Rússia", "San Marino", "Sérvia", "Suécia", "Suica", "Tchéquia", "Turquia", "Ucrânia", "Vaticano"].shuffled()
     
     func flagClick(_ numero: Int) {
-        if numero == selectFlag {
+        if numero == select {
             flag3D += 360
             score = "Correto"
-            totScore += 1
+            totalScore += 1
             games += 1
-            txtRed = false
+            isRed = false
             shuffleFlag()
         } else {
             score = "Incorreto"
             games += 1
-            totScore -= 1
-            txtRed = true
+            totalScore -= 1
+            isRed = true
             shuffleFlag()
         }
-        if games == 8 {
-            restart = true
+        if games == countrys.count {
+            isRestart = true
             games = 0
         }
     }
     
     // A cada vez clicada, embaralha o deck
     func shuffleFlag() {
-        paises.shuffle()
-        selectFlag = Int.random(in: 0...2)
+        countrys.shuffle()
+        select = Int.random(in: 0...5)
     }
     // Reinicia o jogo zerando pontuação e embaralhando o deck
     func restartGame() {
-        totScore = 0
+        totalScore = 0
         shuffleFlag()
         score = ""
         }

@@ -5,11 +5,10 @@
 //  Created by Alex Gutemberg on 07/05/24.
 //
 
-import SwiftUI // TESTE
+import SwiftUI
 
 struct FlagView: View {
     @State var viewModel = FlagViewModel()
-    @ObservedObject var viewModelFlags = FlagsButtons()
     
     var body: some View {
         
@@ -35,14 +34,14 @@ struct FlagView: View {
                             .foregroundStyle(.primary)
                     }
                 
-                    //MARK: - LazyGrid
+                    //MARK: - Centro do app
                     ScrollView {
                         
-                        LazyVGrid(columns: viewModel.layout) {
+                        LazyVGrid(columns: viewModel.layoutGrid) {
                             
                             NavigationLink(destination: AfricaView()){
                                 VStack {
-                                    Image(viewModelFlags.africa)
+                                    Image(viewModel.africa.country)
                                         .resizable()
                                         .clipShape(Capsule())
                                         .shadow(radius: 5)
@@ -55,7 +54,7 @@ struct FlagView: View {
                             
                             NavigationLink(destination: AmericaView()){
                                 VStack {
-                                    Image(viewModelFlags.america)
+                                    Image(viewModel.america.country)
                                         .resizable()
                                         .clipShape(Capsule())
                                         .shadow(radius: 5)
@@ -68,7 +67,7 @@ struct FlagView: View {
                             
                             NavigationLink(destination: AsiaView()){
                                 VStack {
-                                    Image(viewModelFlags.asia)
+                                    Image(viewModel.asia.country)
                                         .resizable()
                                         .clipShape(Capsule())
                                         .shadow(radius: 5)
@@ -81,7 +80,7 @@ struct FlagView: View {
                             
                             NavigationLink(destination: EuropaView()){
                                 VStack {
-                                    Image(viewModelFlags.europa)
+                                    Image(viewModel.europa.country)
                                         .resizable()
                                         .clipShape(Capsule())
                                         .shadow(radius: 5)
@@ -94,7 +93,7 @@ struct FlagView: View {
                             
                             NavigationLink(destination: OceaniaView()){
                                 VStack {
-                                    Image(viewModelFlags.oceania)
+                                    Image(viewModel.oceania.country)
                                         .resizable()
                                         .clipShape(Capsule())
                                         .shadow(radius: 5)

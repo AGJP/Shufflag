@@ -105,6 +105,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		82C7F32C2C001C0C00993386 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		82C88B352BF59E2B0014B2B4 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,7 +178,7 @@
 		82C88B3C2BF59F2C0014B2B4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				82C88B422BF59FA90014B2B4 /* Settings */,
+				82C7F32C2C001C0C00993386 /* Settings */,
 				825273172BEB16C5005A951C /* FlagView.swift */,
 				82C88B402BF59F780014B2B4 /* FlagViewModel.swift */,
 			);
@@ -210,13 +217,6 @@
 				82C88B3D2BF59F2C0014B2B4 /* Intermediario */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		82C88B422BF59FA90014B2B4 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Settings;
 			sourceTree = "<group>";
 		};
 		82C88B432BF5A00F0014B2B4 /* Model */ = {

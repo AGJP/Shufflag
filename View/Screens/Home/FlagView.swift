@@ -10,10 +10,6 @@ import SwiftUI
 struct FlagView: View {
     @State var viewModel = FlagViewModel()
     @ObservedObject var viewModelFlags = FlagsButtons()
-    @FocusState var isFoco: Bool
-    let layout = [
-        GridItem(.adaptive(minimum: 150))
-    ]
     
     var body: some View {
         
@@ -42,7 +38,7 @@ struct FlagView: View {
                     //MARK: - LazyGrid
                     ScrollView {
                         
-                        LazyVGrid(columns: layout) {
+                        LazyVGrid(columns: viewModel.layout) {
                             
                             NavigationLink(destination: AfricaView()){
                                 VStack {

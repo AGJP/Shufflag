@@ -6,10 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct FlagViewModel{
     var opt = 0
     var togg = false
+    let layout = [
+        GridItem(.adaptive(minimum: 150))
+    ]
 }
 
 class FlagsButtons: ObservableObject {

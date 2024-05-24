@@ -5,7 +5,7 @@
 //  Created by Alex Gutemberg on 07/05/24.
 //
 
-import SwiftUI
+import SwiftUI // TESTE
 
 struct FlagView: View {
     @State var viewModel = FlagViewModel()

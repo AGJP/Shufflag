@@ -16,6 +16,9 @@
 		827A642E2BF04A860061C09E /* AmericaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827A642D2BF04A860061C09E /* AmericaView.swift */; };
 		827A64302BF04B080061C09E /* AsiaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827A642F2BF04B080061C09E /* AsiaView.swift */; };
 		827A64322BF04B7E0061C09E /* OceaniaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827A64312BF04B7E0061C09E /* OceaniaView.swift */; };
+		82AC02B42C0180A1000D97BC /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AC02B32C0180A1000D97BC /* TitleView.swift */; };
+		82AC02B72C0183E8000D97BC /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AC02B62C0183E8000D97BC /* RouteView.swift */; };
+		82AC02B92C01846B000D97BC /* TitleFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AC02B82C01846B000D97BC /* TitleFlagView.swift */; };
 		82C7F32E2C00234600993386 /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7F32D2C00234600993386 /* Flags.swift */; };
 		82C88B412BF59F780014B2B4 /* FlagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C88B402BF59F780014B2B4 /* FlagViewModel.swift */; };
 		82C88B472BF5ADC40014B2B4 /* AfricaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C88B462BF5ADC40014B2B4 /* AfricaViewModel.swift */; };
@@ -37,6 +40,9 @@
 		827A642D2BF04A860061C09E /* AmericaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmericaView.swift; sourceTree = "<group>"; };
 		827A642F2BF04B080061C09E /* AsiaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsiaView.swift; sourceTree = "<group>"; };
 		827A64312BF04B7E0061C09E /* OceaniaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OceaniaView.swift; sourceTree = "<group>"; };
+		82AC02B32C0180A1000D97BC /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		82AC02B62C0183E8000D97BC /* RouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
+		82AC02B82C01846B000D97BC /* TitleFlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleFlagView.swift; sourceTree = "<group>"; };
 		82C7F32D2C00234600993386 /* Flags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flags.swift; sourceTree = "<group>"; };
 		82C88B402BF59F780014B2B4 /* FlagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagViewModel.swift; sourceTree = "<group>"; };
 		82C88B462BF5ADC40014B2B4 /* AfricaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaViewModel.swift; sourceTree = "<group>"; };
@@ -95,6 +101,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		82AC02B52C01827A000D97BC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		82C88B352BF59E2B0014B2B4 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +158,7 @@
 			children = (
 				825273172BEB16C5005A951C /* FlagView.swift */,
 				82C88B402BF59F780014B2B4 /* FlagViewModel.swift */,
+				82AC02B62C0183E8000D97BC /* RouteView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -161,6 +175,7 @@
 		82C88B3F2BF59F2C0014B2B4 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				82AC02B52C01827A000D97BC /* Settings */,
 				82C88B3C2BF59F2C0014B2B4 /* Home */,
 				82C88B362BF59F2C0014B2B4 /* Africa */,
 				82C88B372BF59F2C0014B2B4 /* America */,
@@ -182,6 +197,8 @@
 		82C88B442BF5A0430014B2B4 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				82AC02B32C0180A1000D97BC /* TitleView.swift */,
+				82AC02B82C01846B000D97BC /* TitleFlagView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -267,12 +284,15 @@
 				82C88B412BF59F780014B2B4 /* FlagViewModel.swift in Sources */,
 				827A64302BF04B080061C09E /* AsiaView.swift in Sources */,
 				82C88B4B2BF5AF480014B2B4 /* AsiaViewModel.swift in Sources */,
+				82AC02B72C0183E8000D97BC /* RouteView.swift in Sources */,
 				82C7F32E2C00234600993386 /* Flags.swift in Sources */,
 				82C88B492BF5AEC50014B2B4 /* AmericaViewModel.swift in Sources */,
+				82AC02B42C0180A1000D97BC /* TitleView.swift in Sources */,
 				82C88B472BF5ADC40014B2B4 /* AfricaViewModel.swift in Sources */,
 				82C88B4F2BF5AFEE0014B2B4 /* EuropaViewModel.swift in Sources */,
 				825273182BEB16C5005A951C /* FlagView.swift in Sources */,
 				827A642C2BF03D6B0061C09E /* AfricaView.swift in Sources */,
+				82AC02B92C01846B000D97BC /* TitleFlagView.swift in Sources */,
 				827A642E2BF04A860061C09E /* AmericaView.swift in Sources */,
 				827A642A2BF0398B0061C09E /* EuropaView.swift in Sources */,
 				825273162BEB16C5005A951C /* ShufflagApp.swift in Sources */,

@@ -9,7 +9,6 @@ import SwiftUI
 
 struct FlagView: View {
     @State var viewModel = FlagViewModel()
-    var isToog = false
     
     var body: some View {
         
@@ -23,17 +22,8 @@ struct FlagView: View {
                 // Vstack Raiz
                 VStack(spacing: 50) {
                     
-                    //MARK: - Titulos da view
-                    VStack {
-                        Text("Shufflag")
-                            .font(.title)
-                            .fontWeight(.heavy)
-                            .foregroundStyle(.primary)
-                        Text("Jogo das Bandeiras")
-                            .font(.title2)
-                            .fontWeight(.heavy)
-                            .foregroundStyle(.primary)
-                    }
+                    //MARK: - Titulo e subtitulo da View
+                    TitleView(subtitle: "Jogo das Bandeiras")
                 
                     //MARK: - Centro da view
                     ScrollView {
@@ -41,73 +31,23 @@ struct FlagView: View {
                         LazyVGrid(columns: viewModel.layoutGrid) {
                             
                             NavigationLink(destination: AfricaView()){
-                                VStack {
-                                    Image(viewModel.africa.country)
-                                        .resizable()
-                                        .clipShape(Capsule())
-                                        .shadow(radius: 5)
-                                        .frame(width: 150, height: 75)
-                                    Text("África")
-                                        .font(.title)
-                                        .foregroundStyle(.white)
-                                        .shadow(radius: 5)
-                                }
+                                RouteView(image: viewModel.africa.country, title: "África")
                             }
                             
                             NavigationLink(destination: AmericaView()){
-                                VStack {
-                                    Image(viewModel.america.country)
-                                        .resizable()
-                                        .clipShape(Capsule())
-                                        .shadow(radius: 5)
-                                        .frame(width: 150, height: 75)
-                                    Text("América")
-                                        .font(.title)
-                                        .foregroundStyle(.white)
-                                        .shadow(radius: 5)
-                                }
+                                RouteView(image: viewModel.america.country, title: "América")
                             }
                             
                             NavigationLink(destination: AsiaView()){
-                                VStack {
-                                    Image(viewModel.asia.country)
-                                        .resizable()
-                                        .clipShape(Capsule())
-                                        .shadow(radius: 5)
-                                        .frame(width: 150, height: 75)
-                                    Text("Ásia")
-                                        .font(.title)
-                                        .foregroundStyle(.white)
-                                        .shadow(radius: 5)
-                                }
+                                RouteView(image: viewModel.asia.country, title: "Ásia")
                             }
                             
                             NavigationLink(destination: EuropaView()){
-                                VStack {
-                                    Image(viewModel.europa.country)
-                                        .resizable()
-                                        .clipShape(Capsule())
-                                        .shadow(radius: 5)
-                                        .frame(width: 150, height: 75)
-                                    Text("Europa")
-                                        .font(.title)
-                                        .foregroundStyle(.white)
-                                        .shadow(radius: 5)
-                                }
+                                RouteView(image: viewModel.europa.country, title: "Europa")
                             }
                             
                             NavigationLink(destination: OceaniaView()){
-                                VStack {
-                                    Image(viewModel.oceania.country)
-                                        .resizable()
-                                        .clipShape(Capsule())
-                                        .shadow(radius: 5)
-                                        .frame(width: 150, height: 75)
-                                    Text("Oceania")
-                                        .font(.title)
-                                        .foregroundStyle(.white)
-                                        .shadow(radius: 5)
-                                }
+                                RouteView(image: viewModel.oceania.country, title: "Oceania")
                             }
                         }
                     }

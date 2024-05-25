@@ -19,33 +19,11 @@ struct AmericaView: View {
             VStack {
                 
                 //MARK: - Titulo e Categoria da View
-                VStack {
-                    Text("Shufflag")
-                        .font(.title)
-                        .fontWeight(.heavy)
-                        .foregroundStyle(.primary)
-                    Text("Jogo das Bandeiras")
-                        .font(.title2)
-                        .fontWeight(.heavy)
-                        .foregroundStyle(.primary)
-                }
+                TitleView(subtitle: "América")
                 
                 //MARK: - Configuração do subtitulo e nome da bandeira
                 ScrollView {
-                    VStack {
-                        Text("Qual é a bandeira ??")
-                            .foregroundStyle(.white)
-                            .shadow(radius: 5)
-                            .font(.title2)
-                            .fontWeight(.heavy)
-                        
-                        // Configura o país aleatorio a ser selecionado
-                        Text("\(viewModel.countrys[viewModel.select])")
-                            .foregroundStyle(.pink)
-                            .shadow(radius: 5)
-                            .font(.largeTitle)
-                            .fontWeight(.semibold)
-                    }
+                    TitleFlagView(flag: viewModel.countrys[viewModel.select])
                     
                     //MARK: - Configuração das bandeiras
                     VStack {
@@ -98,7 +76,7 @@ struct AmericaView: View {
                 .onAppear{
                     viewModel.restartGame()
                 }
-            } // VStack Raiz
+            }.padding() // VStack Raiz
             
         } // ZStack
     }

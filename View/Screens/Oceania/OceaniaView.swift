@@ -95,6 +95,9 @@ struct OceaniaView: View {
                 } message: {
                     Text("TOTAL: \(viewModel.totalScore) pontos")
                 }
+                .onAppear{
+                    viewModel.restartGame()
+                }
             } // VStack Raiz
             
         } // ZStack

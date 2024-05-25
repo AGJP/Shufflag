@@ -9,20 +9,21 @@ import SwiftUI
 
 struct FlagView: View {
     @State var viewModel = FlagViewModel()
+    var isToog = false
     
     var body: some View {
         
         NavigationStack {
             
             ZStack {
-                //MARK: -  Background do app
+                //MARK: -  Background da view
                 LinearGradient(colors: [.purple, .cyan, .green],startPoint: .trailing, endPoint: .topTrailing)
                     .ignoresSafeArea()
                 
                 // Vstack Raiz
                 VStack(spacing: 50) {
                     
-                    //MARK: - Titulos do App
+                    //MARK: - Titulos da view
                     VStack {
                         Text("Shufflag")
                             .font(.title)
@@ -34,7 +35,7 @@ struct FlagView: View {
                             .foregroundStyle(.primary)
                     }
                 
-                    //MARK: - Centro do app
+                    //MARK: - Centro da view
                     ScrollView {
                         
                         LazyVGrid(columns: viewModel.layoutGrid) {
@@ -49,6 +50,7 @@ struct FlagView: View {
                                     Text("África")
                                         .font(.title)
                                         .foregroundStyle(.white)
+                                        .shadow(radius: 5)
                                 }
                             }
                             
@@ -62,6 +64,7 @@ struct FlagView: View {
                                     Text("América")
                                         .font(.title)
                                         .foregroundStyle(.white)
+                                        .shadow(radius: 5)
                                 }
                             }
                             
@@ -75,6 +78,7 @@ struct FlagView: View {
                                     Text("Ásia")
                                         .font(.title)
                                         .foregroundStyle(.white)
+                                        .shadow(radius: 5)
                                 }
                             }
                             
@@ -88,6 +92,7 @@ struct FlagView: View {
                                     Text("Europa")
                                         .font(.title)
                                         .foregroundStyle(.white)
+                                        .shadow(radius: 5)
                                 }
                             }
                             
@@ -101,47 +106,9 @@ struct FlagView: View {
                                     Text("Oceania")
                                         .font(.title)
                                         .foregroundStyle(.white)
+                                        .shadow(radius: 5)
                                 }
                             }
-                            
-                            /*NavigationLink(destination: FacilView()){
-                                VStack {
-                                    Image(viewModelFlags.africa)
-                                        .resizable()
-                                        .clipShape(Capsule())
-                                        .shadow(radius: 5)
-                                        .frame(width: 150, height: 75)
-                                    Text("Nível Fácil")
-                                        .font(.title)
-                                        .foregroundStyle(.white)
-                                }
-                            }
-                            
-                            NavigationLink(destination: MedioView()){
-                                VStack {
-                                    Image(viewModelFlags.america)
-                                        .resizable()
-                                        .clipShape(Capsule())
-                                        .shadow(radius: 5)
-                                        .frame(width: 150, height: 75)
-                                    Text("Nível Médio")
-                                        .font(.title)
-                                        .foregroundStyle(.white)
-                                }
-                            }
-                            
-                            NavigationLink(destination: DificilView()){
-                                VStack {
-                                    Image(viewModelFlags.europa)
-                                        .resizable()
-                                        .clipShape(Capsule())
-                                        .shadow(radius: 5)
-                                        .frame(width: 150, height: 75)
-                                    Text("Nivel Dificil")
-                                        .font(.title)
-                                        .foregroundStyle(.white)
-                                }
-                            }*/
                         }
                     }
                 }// VSTACK Raiz

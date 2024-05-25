@@ -16,18 +16,12 @@
 		827A642E2BF04A860061C09E /* AmericaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827A642D2BF04A860061C09E /* AmericaView.swift */; };
 		827A64302BF04B080061C09E /* AsiaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827A642F2BF04B080061C09E /* AsiaView.swift */; };
 		827A64322BF04B7E0061C09E /* OceaniaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827A64312BF04B7E0061C09E /* OceaniaView.swift */; };
-		827A64342BF053910061C09E /* FacilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827A64332BF053910061C09E /* FacilView.swift */; };
-		827A64362BF0539D0061C09E /* MedioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827A64352BF0539D0061C09E /* MedioView.swift */; };
-		827A64382BF053A80061C09E /* DificilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827A64372BF053A80061C09E /* DificilView.swift */; };
 		82C7F32E2C00234600993386 /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7F32D2C00234600993386 /* Flags.swift */; };
 		82C88B412BF59F780014B2B4 /* FlagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C88B402BF59F780014B2B4 /* FlagViewModel.swift */; };
 		82C88B472BF5ADC40014B2B4 /* AfricaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C88B462BF5ADC40014B2B4 /* AfricaViewModel.swift */; };
 		82C88B492BF5AEC50014B2B4 /* AmericaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C88B482BF5AEC50014B2B4 /* AmericaViewModel.swift */; };
 		82C88B4B2BF5AF480014B2B4 /* AsiaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C88B4A2BF5AF480014B2B4 /* AsiaViewModel.swift */; };
-		82C88B4D2BF5AFA20014B2B4 /* DificilViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C88B4C2BF5AFA20014B2B4 /* DificilViewModel.swift */; };
 		82C88B4F2BF5AFEE0014B2B4 /* EuropaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C88B4E2BF5AFEE0014B2B4 /* EuropaViewModel.swift */; };
-		82C88B512BF5B0340014B2B4 /* FacilViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C88B502BF5B0340014B2B4 /* FacilViewModel.swift */; };
-		82C88B532BF5B0900014B2B4 /* MedioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C88B522BF5B0900014B2B4 /* MedioViewModel.swift */; };
 		82C88B552BF5B0DA0014B2B4 /* OceaniaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C88B542BF5B0DA0014B2B4 /* OceaniaViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,18 +37,12 @@
 		827A642D2BF04A860061C09E /* AmericaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmericaView.swift; sourceTree = "<group>"; };
 		827A642F2BF04B080061C09E /* AsiaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsiaView.swift; sourceTree = "<group>"; };
 		827A64312BF04B7E0061C09E /* OceaniaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OceaniaView.swift; sourceTree = "<group>"; };
-		827A64332BF053910061C09E /* FacilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilView.swift; sourceTree = "<group>"; };
-		827A64352BF0539D0061C09E /* MedioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedioView.swift; sourceTree = "<group>"; };
-		827A64372BF053A80061C09E /* DificilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DificilView.swift; sourceTree = "<group>"; };
 		82C7F32D2C00234600993386 /* Flags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flags.swift; sourceTree = "<group>"; };
 		82C88B402BF59F780014B2B4 /* FlagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagViewModel.swift; sourceTree = "<group>"; };
 		82C88B462BF5ADC40014B2B4 /* AfricaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaViewModel.swift; sourceTree = "<group>"; };
 		82C88B482BF5AEC50014B2B4 /* AmericaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmericaViewModel.swift; sourceTree = "<group>"; };
 		82C88B4A2BF5AF480014B2B4 /* AsiaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsiaViewModel.swift; sourceTree = "<group>"; };
-		82C88B4C2BF5AFA20014B2B4 /* DificilViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DificilViewModel.swift; sourceTree = "<group>"; };
 		82C88B4E2BF5AFEE0014B2B4 /* EuropaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuropaViewModel.swift; sourceTree = "<group>"; };
-		82C88B502BF5B0340014B2B4 /* FacilViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilViewModel.swift; sourceTree = "<group>"; };
-		82C88B522BF5B0900014B2B4 /* MedioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedioViewModel.swift; sourceTree = "<group>"; };
 		82C88B542BF5B0DA0014B2B4 /* OceaniaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OceaniaViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,13 +95,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		82C7F32C2C001C0C00993386 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
 		82C88B352BF59E2B0014B2B4 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,15 +131,6 @@
 			path = Asia;
 			sourceTree = "<group>";
 		};
-		82C88B392BF59F2C0014B2B4 /* Dificil */ = {
-			isa = PBXGroup;
-			children = (
-				827A64372BF053A80061C09E /* DificilView.swift */,
-				82C88B4C2BF5AFA20014B2B4 /* DificilViewModel.swift */,
-			);
-			path = Dificil;
-			sourceTree = "<group>";
-		};
 		82C88B3A2BF59F2C0014B2B4 /* Europa */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,32 +140,13 @@
 			path = Europa;
 			sourceTree = "<group>";
 		};
-		82C88B3B2BF59F2C0014B2B4 /* Facil */ = {
-			isa = PBXGroup;
-			children = (
-				827A64332BF053910061C09E /* FacilView.swift */,
-				82C88B502BF5B0340014B2B4 /* FacilViewModel.swift */,
-			);
-			path = Facil;
-			sourceTree = "<group>";
-		};
 		82C88B3C2BF59F2C0014B2B4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				82C7F32C2C001C0C00993386 /* Settings */,
 				825273172BEB16C5005A951C /* FlagView.swift */,
 				82C88B402BF59F780014B2B4 /* FlagViewModel.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		82C88B3D2BF59F2C0014B2B4 /* Intermediario */ = {
-			isa = PBXGroup;
-			children = (
-				827A64352BF0539D0061C09E /* MedioView.swift */,
-				82C88B522BF5B0900014B2B4 /* MedioViewModel.swift */,
-			);
-			path = Intermediario;
 			sourceTree = "<group>";
 		};
 		82C88B3E2BF59F2C0014B2B4 /* Oceania */ = {
@@ -214,9 +167,6 @@
 				82C88B382BF59F2C0014B2B4 /* Asia */,
 				82C88B3A2BF59F2C0014B2B4 /* Europa */,
 				82C88B3E2BF59F2C0014B2B4 /* Oceania */,
-				82C88B3B2BF59F2C0014B2B4 /* Facil */,
-				82C88B3D2BF59F2C0014B2B4 /* Intermediario */,
-				82C88B392BF59F2C0014B2B4 /* Dificil */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -313,22 +263,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82C88B512BF5B0340014B2B4 /* FacilViewModel.swift in Sources */,
 				82C88B552BF5B0DA0014B2B4 /* OceaniaViewModel.swift in Sources */,
 				82C88B412BF59F780014B2B4 /* FlagViewModel.swift in Sources */,
-				82C88B4D2BF5AFA20014B2B4 /* DificilViewModel.swift in Sources */,
 				827A64302BF04B080061C09E /* AsiaView.swift in Sources */,
-				827A64362BF0539D0061C09E /* MedioView.swift in Sources */,
 				82C88B4B2BF5AF480014B2B4 /* AsiaViewModel.swift in Sources */,
 				82C7F32E2C00234600993386 /* Flags.swift in Sources */,
 				82C88B492BF5AEC50014B2B4 /* AmericaViewModel.swift in Sources */,
-				82C88B532BF5B0900014B2B4 /* MedioViewModel.swift in Sources */,
 				82C88B472BF5ADC40014B2B4 /* AfricaViewModel.swift in Sources */,
-				827A64382BF053A80061C09E /* DificilView.swift in Sources */,
 				82C88B4F2BF5AFEE0014B2B4 /* EuropaViewModel.swift in Sources */,
 				825273182BEB16C5005A951C /* FlagView.swift in Sources */,
 				827A642C2BF03D6B0061C09E /* AfricaView.swift in Sources */,
-				827A64342BF053910061C09E /* FacilView.swift in Sources */,
 				827A642E2BF04A860061C09E /* AmericaView.swift in Sources */,
 				827A642A2BF0398B0061C09E /* EuropaView.swift in Sources */,
 				825273162BEB16C5005A951C /* ShufflagApp.swift in Sources */,

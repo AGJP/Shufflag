@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FlagView: View {
     @State var viewModel = FlagViewModel()
+    @State var isAlert = false
     
     var body: some View {
         
@@ -23,7 +24,7 @@ struct FlagView: View {
                 VStack(spacing: 50) {
                     
                     //MARK: - Titulo e subtitulo da View
-                    TitleView(subtitle: "Jogo das Bandeiras")
+                    TitleAppView(subtitle: "Jogo das Bandeiras")
                 
                     //MARK: - Centro da view
                     ScrollView {

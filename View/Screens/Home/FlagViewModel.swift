@@ -10,10 +10,11 @@ import SwiftUI
 
 struct FlagViewModel {
     let layoutGrid = [GridItem(.adaptive(minimum: 300))]
-    var isToog = false
     var africa = InitFlagsSettings(country: "África do Sul")
     var america = InitFlagsSettings(country: "Estados Unidos")
     var asia = InitFlagsSettings(country: "China")
     var europa = InitFlagsSettings(country: "Reino Unido")
     var oceania = InitFlagsSettings(country: "Austrália")
+    
 }
+

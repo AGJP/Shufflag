@@ -19,7 +19,7 @@ struct OceaniaView: View {
             VStack {
                 
                 //MARK: - Titulo e Categoria da View
-                TitleView(subtitle: "Oceania")
+                TitleAppView(subtitle: "Oceania")
                 
                 //MARK: - Configuração do subtitulo e nome da bandeira
                 ScrollView {
@@ -54,25 +54,13 @@ struct OceaniaView: View {
                 .padding(.vertical, 20)
                 
                 //MARK: - Configuração de Pontuação e Acerto/Erro
-                VStack {
-                    Text("\(viewModel.score)")
-                        .foregroundStyle(viewModel.isRed ? .red : .green)
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .padding(.vertical, 20)
-                    
-                    Text("Pontuação: \(viewModel.totalScore)")
-                        .foregroundColor(.white)
-                        .font(.title)
-                        .fontWeight(.bold)
-                }
+                ScoreView(score: viewModel.score, isRed: viewModel.isRed , totalScore: viewModel.totalScore)
+                
+                //MARK: - Alerta do game
                 .alert("FIM DE JOGO", isPresented: $viewModel.isRestart) {
-                    Button("Reiniciar") {
-                        viewModel.restartGame()
-                    }
-                } message: {
-                    Text("TOTAL: \(viewModel.totalScore) pontos")
-                }
+                  Button("Reiniciar") {viewModel.restartGame()}
+                    } message: {Text("TOTAL: \(viewModel.totalScore) pontos")}
+                
                 .onAppear{
                     viewModel.restartGame()
                 }
